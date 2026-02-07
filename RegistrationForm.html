@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+label { display:inline-block; width:200px; text-align:right; }
+form { text-align:center; }
+input[type="file"] { width:200px; }
+</style>
+
+<body>
+    <form>
+        <h1>Student Registration Form</h1>
+        <h4>XYZ College Of Engineering and Technology</h4>
+        <p>ABC Place, India</p>
+        
+        <br>
+        <label>Enter Your Name:  </label>
+            <input type="text" placeholder="Name">
+            <br><br>
+
+        <label>Enter Roll No.: </label>
+            <input type ="number" placeholder="Roll No" required>
+            <br><br>
+
+        <label> Father's Name:</label>
+            <input type="text" placeholder="Father's Name">
+            <br><br>
+
+        <label>Date Of Birth:</label>
+        <input type="date">
+        <br><br>
+
+        <label>Enter Your Mobile Number:</label>
+        <input type="tel" placeholder="Mobile number">
+        <br><br>
+
+        <label>Enter Your Email Id:</label>
+        <input type="email" placeholder="xyz@gmail.com">
+        <br><br>
+
+        <label>Enter Your Password:</label>
+        <input type="password" placeholder="Correct password">
+        <br><br>
+
+        <label>Select Your Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label>Department:</label>
+        <select id="Department" name="Department">
+            <option value="">--Select Department--</option>
+            <option value="CSE">CSE</option>
+            <option value="EC">EC</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="AIML">AI/ML</option>
+        </select>
+        <br><br>
+        
+        <label>Upload Your Photo:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+
+        <label>Enter Your Address:</label>
+        <input type="text" placeholder="Permanent Address">
+        <br><br>
+        <input type="submit" value="Registration">
+    </form>
+</body>
+</html>
