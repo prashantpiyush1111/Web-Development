@@ -2,74 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-label { display:inline-block; width:200px; text-align:right; }
-form { text-align:center; }
-input[type="file"] { width:200px; }
-</style>
-
 <body>
-    <form>
+
+<div class="container">
+    <form class="form-box">
         <h1>Student Registration Form</h1>
-        <h4>XYZ College Of Engineering and Technology</h4>
-        <p>ABC Place, India</p>
-        
-        <br>
-        <label>Enter Your Name:  </label>
-            <input type="text" placeholder="Name">
-            <br><br>
+        <p class="college">XYZ College Of Engineering and Technology</p>
+        <p class="place">ABC Place, India</p>
 
-        <label>Enter Roll No.: </label>
-            <input type ="number" placeholder="Roll No" required>
-            <br><br>
+        <div class="input-group">
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+        </div>
 
-        <label> Father's Name:</label>
-            <input type="text" placeholder="Father's Name">
-            <br><br>
+        <div class="input-group">
+            <label>Roll No</label>
+            <input type="number" placeholder="Enter roll number" required>
+        </div>
 
-        <label>Date Of Birth:</label>
-        <input type="date">
-        <br><br>
+        <div class="input-group">
+            <label>Father's Name</label>
+            <input type="text" placeholder="Enter father's name">
+        </div>
 
-        <label>Enter Your Mobile Number:</label>
-        <input type="tel" placeholder="Mobile number">
-        <br><br>
+        <div class="input-group">
+            <label>Date of Birth</label>
+            <input type="date">
+        </div>
 
-        <label>Enter Your Email Id:</label>
-        <input type="email" placeholder="xyz@gmail.com">
-        <br><br>
+        <div class="input-group">
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter mobile number">
+        </div>
 
-        <label>Enter Your Password:</label>
-        <input type="password" placeholder="Correct password">
-        <br><br>
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="xyz@gmail.com">
+        </div>
 
-        <label>Select Your Gender:</label>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-        <br><br>
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter password">
+        </div>
 
-        <label>Department:</label>
-        <select id="Department" name="Department">
-            <option value="">--Select Department--</option>
-            <option value="CSE">CSE</option>
-            <option value="EC">EC</option>
-            <option value="Mechanical">Mechanical</option>
-            <option value="AIML">AI/ML</option>
-        </select>
-        <br><br>
-        
-        <label>Upload Your Photo:</label>
-        <input type="file" id="file" name="file">
-        <br><br>
+        <div class="input-group">
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+        </div>
 
-        <label>Enter Your Address:</label>
-        <input type="text" placeholder="Permanent Address">
-        <br><br>
-        <button>Submit</button>
-        <button>reset</button>
+        <div class="input-group">
+            <label>Department</label>
+            <select>
+                <option>--Select Department--</option>
+                <option>CSE</option>
+                <option>EC</option>
+                <option>Mechanical</option>
+                <option>AI/ML</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Upload Photo</label>
+            <input type="file">
+        </div>
+
+        <div class="input-group">
+            <label>Address</label>
+            <textarea placeholder="Enter permanent address"></textarea>
+        </div>
+
+        <div class="btn-group">
+            <button type="submit" class="submit-btn">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </div>
+
     </form>
+</div>
+
 </body>
 </html>
