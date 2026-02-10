@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.calendar h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    background: #4e73df;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+td:hover {
+    background: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.sunday {
+    color: red;
+    font-weight: bold;
+}
