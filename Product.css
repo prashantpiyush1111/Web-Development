@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    color: #111;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    padding: 12px 25px;
+    margin-right: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buy {
+    background: #007bff;
+    color: white;
+}
+
+.buy:hover {
+    background: #0056b3;
+}
+
+.learn {
+    background: transparent;
+    border: 2px solid #007bff;
+    color: #007bff;
+}
+
+.learn:hover {
+    background: #007bff;
+    color: white;
+}
+
+/* Image */
+.hero-img img {
+    width: 400px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
+}
